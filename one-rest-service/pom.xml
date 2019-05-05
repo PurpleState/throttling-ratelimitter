@@ -14,6 +14,17 @@
 		<version>2.0.5.RELEASE</version>
 	</parent>
 
+	<repositories>
+		<repository>
+			<id>spring-boot-throttling-repo</id>
+			<url>https://raw.github.com/weddini/spring-boot-throttling/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -35,6 +46,13 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>19.0</version>
+		</dependency>
+
+		<!-- repository for handling throttling in spring boot -->
+		<dependency>
+			<groupId>com.weddini.throttling</groupId>
+			<artifactId>spring-boot-throttling-starter</artifactId>
+			<version>0.0.9</version>
 		</dependency>
 	</dependencies>
 
